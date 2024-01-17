@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css" />
+  <link rel="icon" type="image/x-icon" href="assets/Video-camera-vintage-filmmaker-icon-logo-Graphics-5659837-1-312x208.jpg" />
+</head>
+
+<body>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action="php/loginadm.php">
+          <h1>Login</h1>
+          <p>
+            <label for="codadm">Cod ADM</label>
+            <input id="codadm" name="codadm" required="required" type="text"
+              placeholder="12343" />
+          </p>
+
+          <p>
+            <label for="senha">Sua senha</label>
+            <input id="senha" name="senha" required="required" type="password" placeholder="ex.vote09 " />
+          </p>
+
+          <p>
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+
+          <p>
+            <input type="submit" value="Logar" />
+          </p>
+
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+</body>
+
+</html>
